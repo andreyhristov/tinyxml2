@@ -4,7 +4,6 @@ FROM andreyhristov/ubuntu1804_arm64_pylon5:0.1
 RUN apt-get update \
 	&& DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	unzip \
-	&& git clone
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
 
