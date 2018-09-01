@@ -1,4 +1,4 @@
-FROM andreyhristov/ubuntu1804_arm64_pylon5:0.1
+FROM andreyhristov/ubuntu1804_arm64_pylon5:latest
 
 RUN [ "cross-build-start" ]
 
