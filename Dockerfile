@@ -10,6 +10,6 @@ RUN apt-get update \
 
 RUN wget https://codeload.github.com/andreyhristov/tinyxml2/zip/master -O master.zip && unzip master.zip && rm master.zip
 
-RUN for i in "tinyxml2-master" ; do printf "============== %15s ==============\n" $i; cd /$i; make -j2; done
+RUN for i in "tinyxml2-master" ; do printf "============== %15s ==============\n" $i; cd /$i; make; done
 
 RUN [ "cross-build-end" ]
